@@ -1,0 +1,69 @@
+{
+
+  "products": [
+    {
+      "id": 1,
+      "name": "Tomatoes",
+      "price": 100,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Nyanya.JPG/330px-Nyanya.JPG",
+      "category": "Vegetable"
+    },
+    {
+      "name": "Butter",
+      "price": 750,
+      "image": "https://www.bhg.com/thmb/-luCrhu9Eh1C2u-oZXseX5tKAbk=/3000x0/filters:no_upscale():strip_icc()/bhg-how-many-grams-are-in-one-stick-of-butter-03-2c71be43bb20474384f7483c3827f8e7.jpg",
+      "category": "Dairy",
+      "id": 3
+    },
+    {
+      "name": "Hass Avocado",
+      "price": 50,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwaNXdVT-4kYnxgSUsWb-bLCLMHpu2yUUU_g&s",
+      "category": "Fruits",
+      "id": 4
+    },
+    {
+      "name": "Pineapple",
+      "price": "300",
+      "image": "https://media.self.com/photos/5b4371cc4d0c3c282a8878d3/4:3/w_2560%2Cc_limit/pineapple.jpg",
+      "category": "Fruits",
+      "id": 5
+    },
+    {
+      "name": "Lemon Grass",
+      "price": 350,
+      "image": "https://image.tuasaude.com/media/article/s5/wi/capim-limao_15909.jpg?width=686&height=487",
+      "category": "Herbs",
+      "id": 6
+    },
+    {
+      "name": "Yellow beans",
+      "price": 250,
+      "image": "https://farmbid.africa/storage/uploads/images/1726483247ex7wk-yellow-beans.jpeg",
+      "category": "Cereals",
+      "id": 7
+    },
+    {
+      "name": "Sweet Potatoes(Ngwashe)",
+      "price": "200",
+      "image": "https://c.ndtvimg.com/gws/ms/health-benefits-of-sweet-potatoes/assets/5.png",
+      "category": "Tubers",
+      "id": 8
+    },
+    {
+      "name": "Arrow roots (Nduma)",
+      "price": 350,
+      "image": "https://mybigorder.com/public/uploads/products/photos/RwSJ6ArQT4AvA8aGSAdZZtaaQauXcYity7sWDzyx.jpeg",
+      "category": "Tubers",
+      "id": 9
+    },
+    {
+      "name": "Apple",
+      "price": 50,
+      "image": "https://images.everydayhealth.com/images/diet-nutrition/apples-101-about-1440x810.jpg?w=508",
+      "category": "Fruits",
+      "id": 10
+    }
+  ]
+
+}
