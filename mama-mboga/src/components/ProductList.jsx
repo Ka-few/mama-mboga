@@ -5,7 +5,7 @@ function ProductList() {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:3000/products")
+        fetch("https://mama-mboga-2.onrender.com/products")
             .then((res) => res.json())
             .then((data) => setProducts(data))
             .catch((err) => console.error("Error fetching products:", err))

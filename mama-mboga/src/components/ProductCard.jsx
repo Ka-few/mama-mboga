@@ -9,7 +9,7 @@ function ProductCard({product}) {
 
     function handleDelete() {
 
-        fetch(`http://localhost:3000/products/${product.id}`, {
+        fetch(`https://mama-mboga-2.onrender.com/products/${product.id}`, {
 
             method: "DELETE",
             })
@@ -30,7 +30,7 @@ function ProductCard({product}) {
         }
 
 
-        fetch(`http://localhost:3000/products/${product.id}`, {
+        fetch(`https://mama-mboga-2.onrender.com/products/${product.id}`, {
 
             method: "PATCH",
             headers: {

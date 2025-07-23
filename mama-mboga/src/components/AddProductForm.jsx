@@ -19,7 +19,7 @@ function AddProductForm() {
             category,
         }
 
-        fetch("http://localhost:3000/products", {
+        fetch("https://mama-mboga-2.onrender.com/products", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
