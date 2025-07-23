@@ -8,7 +8,9 @@ function ProductCard({product}) {
     const [updatedCategory, setUpdatedCategory] = useState(product.category)
 
     function handleDelete() {
+
         fetch(`http://localhost:3000/products/${product.id}`, {
+
             method: "DELETE",
             })
             .then(() => {
@@ -27,7 +29,9 @@ function ProductCard({product}) {
             category: updatedCategory,
         }
 
+
         fetch(`http://localhost:3000/products/${product.id}`, {
+
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
@@ -104,3 +108,4 @@ function ProductCard({product}) {
 }
 
 export default ProductCard
+

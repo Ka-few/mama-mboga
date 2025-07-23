@@ -1,19 +1,13 @@
 {
-  "posts": [
+
+  "products": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Tomatoes",
+      "price": 100,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Nyanya.JPG/330px-Nyanya.JPG",
+      "category": "Vegetable"
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
+
