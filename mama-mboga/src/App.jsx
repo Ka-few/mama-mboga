@@ -5,6 +5,7 @@ import ProductList from './components/ProductList'
 import AddProductForm from './components/AddProductForm'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import './App.css'
 
 function App() {
   return (
