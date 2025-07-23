@@ -1,45 +1,35 @@
-import React, { useEffect, useState } from "react";
-import ProductCard from "./ProductCard";
+import React, { useEffect, useState } from 'react'
+import ProductCard from './ProductCard'
 
 function ProductList() {
-  const [products, setProducts] = useState([]);
+    const [products, setProducts] = useState([])
 
-  useEffect(() => {
-    fetch("http://localhost:3000/products")
-      .then((res) => res.json())
-      .then((data) => setProducts(data))
-      .catch((err) => console.error("Fetch error:", err));
-  }, []);
-
-  function handleDelete(id) {
-    fetch(`http://localhost:3000/products/${id}`, {
-      method: "DELETE",
-    })
-      .then(() => {
-        setProducts(products.filter((product) => product.id !== id));
-      })
-      .catch((err) => console.error("Delete failed:", err));
-  }
-
-  function handleUpdate(updatedProduct) {
-    const updatedList = products.map((product) =>
-      product.id === updatedProduct.id ? updatedProduct : product
-    );
-    setProducts(updatedList);
-  }
-
+    useEffect(() => {
+        fetch("http://localhost:3000/products")
+            .then((res) => res.json())
+            .then((data) => setProducts(data))
+            .catch((err) => console.error("Error fetching products:", err))
+    }, [])
   return (
-    <div className="grid grid-cols-2 gap-4 p-4">
-      {products.map((product) => (
-        <ProductCard
-          key={product.id}
-          product={product}
-          onDelete={handleDelete}
-          onUpdate={handleUpdate}
-        />
-      ))}
+    <div className='product-list'>
+        <h2 className='section-title'>Available Groceries</h2>
+        <div className='products-grid'>
+            {products.length > 0 ? (
+                products.map((product) => (
+                    <ProductCard 
+                    key={product.id}
+                    product = {product}
+                    />
+                ))
+            ) : (
+                <p>No products found!</p>
+            
+            )}
+        </div>
+      
     </div>
-  );
+  )
 }
 
-export default ProductList;
+export default ProductList
+
