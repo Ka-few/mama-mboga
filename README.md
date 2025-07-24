@@ -8,7 +8,7 @@ You get to browse for your desired products add them to a cart for checkout. The
 The images used in this application are for educational purposes only. We have used the images without explicit rights from the owners.
 
 ## Instructions for use.
-Click on the link (https://mama-mboga-steel.vercel.app/)
+Click on the link (https://mama-mboga-pkyg.vercel.app/)
 
 ### The live site allows you to:
 ##### Browse through available products
