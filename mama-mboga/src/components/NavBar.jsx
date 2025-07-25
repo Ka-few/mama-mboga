@@ -5,7 +5,7 @@ function NavBar({cart}) {
     const itemCount = cart.reduce((sum, item) => sum + item.quantity, 0)
   return (
     <nav className='navbar'>
-        <h2>Mama Mboga</h2>
+        <h2 className='logo'>Mama Mboga 🥬</h2>
         <ul className='nav-links'>
             <li>
                 <NavLink to='/' end>
@@ -19,7 +19,19 @@ function NavBar({cart}) {
             </li>
             <li>
                 <NavLink to='/cart'>
-                    Cart
+                    Cart 🛒
+            {itemCount > 0 && (
+              <span style={{
+                marginLeft: '6px',
+                background: 'red',
+                color: 'white',
+                borderRadius: '50%',
+                padding: '2px 6px',
+                fontSize: '12px'
+              }}>
+                {itemCount}
+              </span>
+            )}
                 </NavLink>
             </li>
             <li>
