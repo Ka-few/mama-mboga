@@ -1,7 +1,8 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
 
-function NavBar() {
+function NavBar({cart}) {
+    const itemCount = cart.reduce((sum, item) => sum + item.quantity, 0)
   return (
     <nav className='navbar'>
         <h2>Mama Mboga</h2>
@@ -14,6 +15,11 @@ function NavBar() {
             <li>
                 <NavLink to='/add-product'>
                     Add Product
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to='/cart'>
+                    Cart
                 </NavLink>
             </li>
             <li>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function ProductCard({product}) {
+function ProductCard({product, addToCart}) {
     const [isEditing, setIsEditing] = useState(false)
     const [updatedName, setUpdatedName] = useState(product.name)
     const [updatedPrice, setUpdatedPrice] = useState(product.price)
@@ -48,6 +48,7 @@ function ProductCard({product}) {
     }
   return (
     <div className='product-card'>
+      
         {isEditing ? (
         <form onSubmit={handleUpdate}>
           <input
@@ -97,7 +98,7 @@ function ProductCard({product}) {
         <h3>{product.name}</h3>
         <p>KES {product.price}</p>
         <p><strong>Category:</strong>{product.category}</p>
-        <button onClick={() => alert("Added to cart!")}>Add to Cart</button>
+        <button onClick={() => addToCart(product)}>Add to Cart</button>
         <button onClick={() => setIsEditing(true)}>Update</button>
         <button onClick={handleDelete}>Delete</button>
         </>

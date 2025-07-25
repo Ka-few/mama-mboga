@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ProductCard from './ProductCard'
 
-function ProductList() {
+function ProductList({addToCart}) {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
@@ -12,6 +12,7 @@ function ProductList() {
     }, [])
   return (
     <div className='product-list'>
+        
         <h2 className='section-title'>Available Groceries</h2>
         <div className='products-grid'>
             {products.length > 0 ? (
@@ -19,6 +20,7 @@ function ProductList() {
                     <ProductCard 
                     key={product.id}
                     product = {product}
+                    addToCart={addToCart}
                     />
                 ))
             ) : (
